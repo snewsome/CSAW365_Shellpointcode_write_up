@@ -7,7 +7,7 @@ r = remote("pwn.chal.csaw.io",9005)
 #r = process("./shellpointcode")
 #context.terminal = ['tmux', 'splitw', '-h']
 #gdb.attach(r, gdbscript='''
-#    continue
+#continue
 #''')
 
 raw_input()
