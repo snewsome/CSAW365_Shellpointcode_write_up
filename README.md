@@ -3,14 +3,14 @@
 **Category:** Pwn
 **Points:** 100
 
-> r = remote("pwn.chal.csaw.io",9005)
-> #r = process("./shellpointcode")
-> #context.terminal = ['tmux', 'splitw', '-h']
-> #gdb.attach(r, gdbscript='''
-> #    continue
-> #''')
+r = remote("pwn.chal.csaw.io",9005)
+#r = process("./shellpointcode")
+#context.terminal = ['tmux', 'splitw', '-h']
+#gdb.attach(r, gdbscript='''
+#    continue
+#''')
 
-> raw_input()
+raw_input()
 #break *0x555555554918
 
 print r.recvuntil(":")
